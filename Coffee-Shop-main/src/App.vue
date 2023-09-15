@@ -60,8 +60,8 @@
 
 <template>
   <h1 style="color: white ;">Select Your Favorite Restaurant</h1> <br>
-  <div class="container-input" style="background-color: #5d7585;">
-    <h4 style="color: rgb(245, 0, 0); font-weight: bold;">** กรุณากรอกข้อมูลให้ครบถ้วนก่อนจองโต๊ะ **</h4>
+  <div class="container-input" style="background-color: #f0f5f8;">
+    <h4 style="color: rgb(245, 0, 0); font-weight: bold;">** กรอกข้อมูลให้ครบถ้วนก่อนจองโต๊ะ **</h4>
     <div class="cont">
           <div class="text-input">
             Name &nbsp; <input type="text" v-model="Details.name" required> 
@@ -70,20 +70,20 @@
             Tel &nbsp; <input type="tel" v-model="Details.tel" required> 
           </div>
           <div class="text-input">  
-            DD/MM/YYYY &nbsp; <input type="date" v-model="Details.date" required>
+            ว/ด/ป &nbsp; <input type="date" v-model="Details.date" required>
           </div>
           <div class="text-input">
             Time &nbsp; <input type="time" v-model="Details.time" required>
           </div>
           <div class="text-input">
-            Tables &nbsp; <input type="number" v-model="Details.tables" required> 
+          จำนวนโต๊ะ&nbsp; <input type="number" v-model="Details.tables" required> 
           </div>
     </div>
   </div>
   <div class="container text-center" style="background-color: ; border-radius: 20px;">
     <div class="row" align="center">
       <div class="col" v-for="(item, index) in travelList" :key="index">
-        <div class="card" style="width: 18rem; background-color: #7993a4; margin: 25px; border-radius: 30px;">
+        <div class="card" style="width: 18rem; background-color: #f0dabe; margin: 25px; border-radius: 30px;">
           <img :src="item.img" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">{{ item.name }}</h5>
